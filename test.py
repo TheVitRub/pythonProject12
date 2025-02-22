@@ -423,7 +423,7 @@ def main():
                     log.append(f"Герой достиг уровня {hero.lvl}!")
                     show_level_up_menu(hero)  # Отображаем окно прокачки
                 background = pygame.transform.scale(pygame.image.load("back.png"), (SCREEN_WIDTH, SCREEN_HEIGHT))
-                enemy = Enemy(200, 200, enemy_idle_frames2, health=10)
+                enemy = Enemy(200, 200, enemy_idle_frames2, health=20)
             counter += 1
 
         if turn == "enemy":
